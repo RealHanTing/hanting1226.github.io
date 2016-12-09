@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-09T02:48:45.526Z</updated>
+  <updated>2016-12-09T05:05:34.508Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/12/09/Markdown/"/>
     <id>http://yoursite.com/2016/12/09/Markdown/</id>
     <published>2016-12-08T23:43:40.280Z</published>
-    <updated>2016-12-09T02:48:45.526Z</updated>
+    <updated>2016-12-09T05:05:34.508Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>自从用Github和Hexo建了这个Blog以来一直在闲置，一是前段时间确实忙，一是由于Hexo写文章要求用 MarkDown 语法，可是不会啊（摔），所以最近才有时间粗略的看了下，写这第一篇，介绍和练习一下Markdown语法</p>
@@ -177,7 +177,7 @@ _     下划线
 .     英文句点
 !     惊叹号
 </code></pre><p>　</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>　　Markdown经过我几个小时的使用发现的确方便很多，但同时还有一些未完善的部分（如文中没有讲解的写法繁杂的表格），且多个在线或跨平台Markdown编辑器都各有优势与劣势，但这都不能掩盖Markdown的锋芒，目前来讲，Markdown作为一中书写语言，完全可以胜任日常需求，若经过继续维护与发展，完全可以深入一些专业领域，以上。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>　　Markdown经过我几个小时的使用发现的确方便很多，但同时还有一些未完善的部分（如文中没有讲解的写法繁杂的表格），且多个在线或跨平台Markdown编辑器都各有优势与劣势，但这都不能掩盖Markdown的锋芒，目前来讲，Markdown作为一种书写语言，完全可以胜任日常需求，若经过继续维护与发展，完全可以深入一些专业领域，以上。</p>
 ]]></content>
     
     <summary type="html">
@@ -185,28 +185,6 @@ _     下划线
       &lt;blockquote&gt;
 &lt;p&gt;自从用Github和Hexo建了这个Blog以来一直在闲置，一是前段时间确实忙，一是由于Hexo写文章要求用 MarkDown 语法，可是不会啊（摔），所以最近才有时间粗略的看了下，写这第一篇，介绍和练习一下Markdown语法&lt;/p&gt;
 &lt;/blo
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>1</title>
-    <link href="http://yoursite.com/2016/12/08/1/"/>
-    <id>http://yoursite.com/2016/12/08/1/</id>
-    <published>2016-12-08T14:36:37.478Z</published>
-    <updated>2016-12-09T02:41:01.660Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><h4 id="4"><a href="#4" class="headerlink" title="4"></a>4</h4><h5 id="5"><a href="#5" class="headerlink" title="5"></a>5</h5><p>电饭锅电饭锅<br><em>防守打法</em><br><strong>阿斯达所多</strong><br><strong><em>对的</em></strong></p>
-<hr>
-<hr>
-<hr>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1&quot;&gt;&lt;/a&gt;1&lt;/h1&gt;&lt;h2 id=&quot;2&quot;&gt;&lt;a href=&quot;#2&quot; class=&quot;headerlink&quot; title=&quot;2&quot;&gt;&lt;/a&gt;2&lt;/h2&gt;&lt;h3 id=&quot;3&quot;&gt;&lt;a 
     
     </summary>
     
