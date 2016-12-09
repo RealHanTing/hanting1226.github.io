@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-09T05:05:34.508Z</updated>
+  <updated>2016-12-09T07:49:53.936Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,11 +19,11 @@
     <title>Markdown初学</title>
     <link href="http://yoursite.com/2016/12/09/Markdown/"/>
     <id>http://yoursite.com/2016/12/09/Markdown/</id>
-    <published>2016-12-08T23:43:40.280Z</published>
-    <updated>2016-12-09T05:05:34.508Z</updated>
+    <published>2016-12-08T16:00:00.000Z</published>
+    <updated>2016-12-09T07:49:53.936Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
-<p>自从用Github和Hexo建了这个Blog以来一直在闲置，一是前段时间确实忙，一是由于Hexo写文章要求用 MarkDown 语法，可是不会啊（摔），所以最近才有时间粗略的看了下，写这第一篇，介绍和练习一下Markdown语法</p>
+<p>自从用Github和Hexo建了这个Blog以来一直在闲置，一是前段时间确实忙，一是由于Hexo写文章要求用 MarkDown 语法，可是不会啊（摔），所以最近才有时间粗略的看了下，写这第一篇，介绍和练习一下Markdown语法<br><a id="more"></a></p>
 </blockquote>
 <p>　</p>
 <h3 id="1-标题级别"><a href="#1-标题级别" class="headerlink" title="1. 标题级别"></a>1. 标题级别</h3><p>　　markdown支持简单的写出HTML中不同级别的标题，方法有2种，介绍比较方便的一种，往下看</p>
@@ -183,11 +183,14 @@ _     下划线
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;自从用Github和Hexo建了这个Blog以来一直在闲置，一是前段时间确实忙，一是由于Hexo写文章要求用 MarkDown 语法，可是不会啊（摔），所以最近才有时间粗略的看了下，写这第一篇，介绍和练习一下Markdown语法&lt;/p&gt;
-&lt;/blo
+&lt;p&gt;自从用Github和Hexo建了这个Blog以来一直在闲置，一是前段时间确实忙，一是由于Hexo写文章要求用 MarkDown 语法，可是不会啊（摔），所以最近才有时间粗略的看了下，写这第一篇，介绍和练习一下Markdown语法&lt;br&gt;
     
     </summary>
     
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
     
   </entry>
   
