@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Icex">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Tomcat 8 设置HTTPS通道"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Icex`s Blah"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.comundefined"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Icex`s Blah" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Icex`s Blah</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  
+  <link rel="stylesheet" href="/css/style.dark.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Tomcat 8 设置HTTPS通道</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/xiaofdejimo">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="http://www.hanting1226.com.cn">
+                  
+                  Website
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Icex</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2017-02-05</span>
+            <span class="time">02:23:02</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/代码/">代码</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/Tomcat-8/">#Tomcat 8</a> <a class="tag" href="/tags/HTTPS/">#HTTPS</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <blockquote>
+<p>其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，然后试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&lt;(￣ˇ￣)/】，然后举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！<br><a id="more"></a></p>
+<p>###1.HTTPS介绍<br>　　原理大家自己都会查我就不的嘚吧嘚了，说下和 HTTP 的区别和为啥我们要尽量用 HTTPS 吧</p>
+</blockquote>
+<p>　　我们把 HTTP 和 HTTPS 做一个比喻，网络就好像送快递， HTTP 就好比我们的包裹，如果运送的过程中有人图谋不轨，在你的包裹上做了手脚（也就是我们常说的 HTTP 劫持），你收到的时候就会被这些小动作影响，这时候轻则你会看到你访问的网页多了一些广告，这还能忍，重则盗取你的 cookie 中的数据做一些非法勾当，甚至直接向你的电脑植入木马，而 HTTPS 就好比卖家把包裹外面加了一个带密码锁的铁盒子，密码只有你和卖家知道，当你收到铁盒子的时候，输入密码把铁盒子去掉，就得到了完整无损的包裹，如果你收到的铁盒子上面有了破损，你就直接丢掉，让卖家重新快递，这样一来保证了我们的包裹也就是我们访问的页面是原始完整的</p>
+<p>###2.证书文件的生成<br>　　我既然拿到了有机构认可的证书，就要用在网站上啊，但由于 Tomcat 使用的 Java 规范的证书文件是 keystore 或者 jks 格式，而 TrustAsia 给我的是 crt 和 key 文件，我们就要进行一下转换，我们需要使用 TrustAsia 提供的在线工具进项转换：<br><a href="https://www.trustasia.com/tools-cert-converter" target="_blank" rel="external">证书格式转换</a></p>
+<p>我们会看到如下页面：</p>
+<p><img src="/img/2017.02.05/1.jpg" alt="alt img1"></p>
+<p>我们只需要选择好证书文件（*.crt）和私钥文件（*.crt），PEM 私钥密码为空，然后填写你自己所用的密钥库密码并确认，点击生成就可以下载 jks 文件了，然后牢记你的密钥库密码，因为我们后面配置 Tomcat 的时候还会用到</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
