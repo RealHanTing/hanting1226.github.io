@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-10T17:36:06.714Z</updated>
+  <updated>2017-02-10T18:00:40.866Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/"/>
     <id>http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/</id>
     <published>2017-02-04T16:00:00.000Z</published>
-    <updated>2017-02-10T17:36:06.714Z</updated>
+    <updated>2017-02-10T18:00:40.866Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&lt;(￣ˇ￣)/】，举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！<br><a id="more"></a></p>
@@ -31,9 +31,9 @@
 <p>　</p>
 <h3 id="2-证书文件的生成"><a href="#2-证书文件的生成" class="headerlink" title="2. 证书文件的生成"></a>2. 证书文件的生成</h3><p>　　我既然拿到了有机构认可的证书，就要用在网站上啊，但由于 Tomcat 使用的 Java 规范的证书文件是 keystore 或者 jks 格式，而 TrustAsia 给我的是 crt 和 key 文件，我们就要进行一下转换，我们需要使用 TrustAsia 提供的在线工具进项转换：</p>
 <p>　　<a href="https://www.trustasia.com/tools-cert-converter" target="_blank" rel="external">证书格式转换</a></p>
-<p>我们会看到如下页面：</p>
+<p>　　我们会看到如下页面：</p>
 <p><img src="/img/2017-02-05/1.jpg" alt="alt img1"></p>
-<p>我们只需要选择好证书文件（*.crt）和私钥文件（*.crt），PEM 私钥密码为空，然后填写你自己所用的密钥库密码并确认，点击生成就可以下载 jks 文件了，然后牢记你的密钥库密码，因为我们后面配置 Tomcat 的时候还会用到</p>
+<p>　　我们只需要选择好证书文件（*.crt）和私钥文件（*.crt），PEM 私钥密码为空，然后填写你自己所用的密钥库密码并确认，点击生成就可以下载 jks 文件了，然后牢记你的密钥库密码，因为我们后面配置 Tomcat 的时候还会用到</p>
 <p>　</p>
 <h3 id="3-Tomcat-配置-HTTPS"><a href="#3-Tomcat-配置-HTTPS" class="headerlink" title="3. Tomcat 配置 HTTPS"></a>3. Tomcat 配置 HTTPS</h3><p>　　找到在 Tomcat 根目录，将jks文件放在 conf 文件夹下，然后编辑 <code>server.xml</code> ，找到如下段落，这段会被注释着，我们去掉注释符，我们暂定证书文件为 <code>123.jks</code> ，密钥库密码为 <code>123</code> ，注意修改端口为 <code>443</code> ，如果 <code>clientAuth</code> 为 <code>true</code> 表示Tomcat要求所有的SSL客户出示安全证书，对SSL客户进行身份验证，我们采用默认的 <code>false</code> ，其他设置采用默认，结果如下</p>
 <pre><code>&lt;Connector port=&quot;443&quot; protocol=&quot;HTTP/1.1&quot; SSLEnabled=&quot;true&quot;
