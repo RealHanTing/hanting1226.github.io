@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-09T18:36:24.026Z</updated>
+  <updated>2017-02-09T18:37:44.272Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/"/>
     <id>http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/</id>
     <published>2017-02-04T16:00:00.000Z</published>
-    <updated>2017-02-09T18:36:24.026Z</updated>
+    <updated>2017-02-09T18:37:44.272Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
-<p>其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，然后试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&lt;(￣ˇ￣)/】，然后举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！<br><a id="more"></a></p>
+<p>其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&lt;(￣ˇ￣)/】，举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！<br><a id="more"></a></p>
 </blockquote>
 <p>　</p>
 <h3 id="1-HTTPS介绍"><a href="#1-HTTPS介绍" class="headerlink" title="1. HTTPS介绍"></a>1. HTTPS介绍</h3><p>　　原理大家自己都会查我就不的嘚吧嘚了，说下和 HTTP 的区别和为啥我们要尽量用 HTTPS 吧</p>
@@ -38,7 +38,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，然后试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&amp;lt;(￣ˇ￣)/】，然后举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！&lt;br&gt;
+&lt;p&gt;其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&amp;lt;(￣ˇ￣)/】，举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！&lt;br&gt;
     
     </summary>
     
