@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-10T18:00:40.866Z</updated>
+  <updated>2017-02-10T18:12:52.144Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/02/11/musicTest/"/>
+    <id>http://yoursite.com/2017/02/11/musicTest/</id>
+    <published>2017-02-10T18:12:52.025Z</published>
+    <updated>2017-02-10T18:12:52.144Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Tomcat 8 设置HTTPS通道</title>
     <link href="http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/"/>
     <id>http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/</id>
     <published>2017-02-04T16:00:00.000Z</published>
-    <updated>2017-02-10T18:00:40.866Z</updated>
+    <updated>2017-02-10T18:04:30.073Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&lt;(￣ˇ￣)/】，举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！<br><a id="more"></a></p>
