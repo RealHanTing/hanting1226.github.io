@@ -28,7 +28,7 @@
   <!-- Custom CSS -->
   
   
-  <link rel="stylesheet" href="/css/style.dark.css">
+  <link rel="stylesheet" href="/css/style.light.css">
 
   <!-- Google Analytics -->
   
@@ -102,7 +102,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2017-03-27</span>
-            <span class="time">20:03:28</span>
+            <span class="time">20:25:55</span>
           </span>
           
         </div>
@@ -110,8 +110,7 @@
         
         <!-- Post Main Content -->
         <div class="post-content">
-          <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe></p>
-<p><label id="show"></label></p>
+          <p><label id="show"></label></p>
 <script language="javascript" type="text/javascript">
 <!--
 //获得当前时间,刻度为一千分一秒
@@ -130,7 +129,9 @@ document.all.show.innerHTML=hours+":"+minutes+":"+seconds;
 var timeID=setTimeout(showLeftTime,1000);
 }
 //-->
+$.ajax({type:"OPTIONS",url:"/",complete:function(x){alert(x.getResponseHeader("Date"))}})
 </script>
+
         </div>
       </div>
     </div>
