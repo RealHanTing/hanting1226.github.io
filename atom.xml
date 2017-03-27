@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Icex`s Blah</title>
-  <subtitle>会有一些代码备忘与整理，软件评测和安利，写的小文或者拍的片儿</subtitle>
+  <subtitle>一些代码备忘与整理，软件安利，碎语或者拍的片儿</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-10T18:12:52.144Z</updated>
+  <updated>2017-03-27T11:41:46.090Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,24 @@
     <link href="http://yoursite.com/2017/02/11/musicTest/"/>
     <id>http://yoursite.com/2017/02/11/musicTest/</id>
     <published>2017-02-10T18:12:52.025Z</published>
-    <updated>2017-02-10T18:12:52.144Z</updated>
+    <updated>2017-03-27T11:41:46.090Z</updated>
     
-    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe>]]></content>
+    <content type="html"><![CDATA[<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe></p>
+<script language="javascript" type="text/javascript">
+var initializationTime=(new Date()).getTime();
+var now=new Date();
+var year=now.getYear();
+var month=now.getMonth();
+var day=now.getDate();
+var hours=now.getHours();
+var minutes=now.getMinutes();
+var seconds=now.getSeconds();
+document.all.show.innerHTML=""+year+"年"+month+"月"+day+"日 "+hours+":"+minutes+":"+seconds+"";
+</script>]]></content>
     
     <summary type="html">
     
-      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
+      &lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?ty
     
     </summary>
     
