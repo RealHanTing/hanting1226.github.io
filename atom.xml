@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-27T12:01:52.214Z</updated>
+  <updated>2017-03-27T12:03:13.185Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://yoursite.com/2017/03/27/TimeTest/"/>
     <id>http://yoursite.com/2017/03/27/TimeTest/</id>
     <published>2017-03-27T12:01:52.097Z</published>
-    <updated>2017-03-27T12:01:52.214Z</updated>
+    <updated>2017-03-27T12:03:13.185Z</updated>
     
-    <content type="html"><![CDATA[<p><label id="show"></label></p>
+    <content type="html"><![CDATA[<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe></p>
+<p><label id="show"></label></p>
 <script language="javascript" type="text/javascript">
 <!--
 //获得当前时间,刻度为一千分一秒
@@ -45,11 +46,7 @@ var timeID=setTimeout(showLeftTime,1000);
     
     <summary type="html">
     
-      &lt;p&gt;&lt;label id=&quot;show&quot;&gt;&lt;/label&gt;&lt;/p&gt;
-&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-&lt;!--
-//获得当前时间,刻度为一千分一秒
-var initializationTime=(new Da
+      &lt;p&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?ty
     
     </summary>
     
