@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-27T12:07:56.623Z</updated>
+  <updated>2017-03-27T12:38:05.661Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,78 +16,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2017/03/27/TimeTest/"/>
-    <id>http://yoursite.com/2017/03/27/TimeTest/</id>
-    <published>2017-03-27T12:01:52.097Z</published>
-    <updated>2017-03-27T12:07:56.623Z</updated>
-    
-    <content type="html"><![CDATA[<p><label id="show"></label></p>
-<script language="javascript" type="text/javascript">
-<!--
-//获得当前时间,刻度为一千分一秒
-var initializationTime=(new Date()).getTime();
-window.onload=function showLeftTime()
-{
-var now=new Date();
-var year=now.getYear();
-var month=now.getMonth();
-var day=now.getDate();
-var hours=now.getHours();
-var minutes=now.getMinutes();
-var seconds=now.getSeconds();
-document.all.show.innerHTML=hours+":"+minutes+":"+seconds;
-//一秒刷新一次显示时间
-var timeID=setTimeout(showLeftTime,1000);
-}
-//-->
-$.ajax({type:"OPTIONS",url:"/",complete:function(x){alert(x.getResponseHeader("Date"))}})
-</script>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;label id=&quot;show&quot;&gt;&lt;/label&gt;&lt;/p&gt;
-&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-&lt;!--
-//获得当前时间,刻度为一千分一秒
-var initializationTime=(new Da
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2017/02/11/musicTest/"/>
-    <id>http://yoursite.com/2017/02/11/musicTest/</id>
-    <published>2017-02-10T18:12:52.025Z</published>
-    <updated>2017-03-27T11:44:11.621Z</updated>
-    
-    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Tomcat 8 设置HTTPS通道</title>
     <link href="http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/"/>
     <id>http://yoursite.com/2017/02/05/2017-02-05-tomcat8https/</id>
     <published>2017-02-04T16:00:00.000Z</published>
-    <updated>2017-02-10T18:04:30.073Z</updated>
+    <updated>2017-03-27T12:38:05.661Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>其实去年9月就借着腾讯云的活动弄到了 TrustAsia 的证书，试着弄了弄，发现网上教程大多是使用 keytool 自制的证书【你们可能用了假证书&lt;(￣ˇ￣)/】，举例子的格式都是 keystore ，当时看的我是一头雾水，然后。。。就拖了一学期直到放假回来才仔细琢磨弄好了，现在方法奉上！<br><a id="more"></a></p>
 </blockquote>
 <p>　</p>
+<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=443716086&auto=1&height=66"></iframe>　</p>
 <h3 id="1-HTTPS-介绍"><a href="#1-HTTPS-介绍" class="headerlink" title="1. HTTPS 介绍"></a>1. HTTPS 介绍</h3><p>　　原理大家自己都会查我就不的嘚吧嘚了，说下和 HTTP 的区别和为啥我们要尽量用 HTTPS 吧</p>
 <p>　　我们把 HTTP 和 HTTPS 做一个比喻，网络就好像送快递， HTTP 就好比我们的包裹，如果运送的过程中有人图谋不轨，在你的包裹上做了手脚（也就是我们常说的 HTTP 劫持），你收到的时候就会被这些小动作影响，这时候轻则你会看到你访问的网页多了一些广告，这还能忍，重则盗取你的 cookie 中的数据做一些非法勾当，甚至直接向你的电脑植入木马，而 HTTPS 就好比卖家把包裹外面加了一个带密码锁的铁盒子，密码只有你和卖家知道，当你收到铁盒子的时候，输入密码把铁盒子去掉，就得到了完整无损的包裹，如果你收到的铁盒子上面有了破损，你就直接丢掉，让卖家重新快递，这样一来保证了我们的包裹也就是我们访问的页面是原始完整的</p>
 <p>　</p>
